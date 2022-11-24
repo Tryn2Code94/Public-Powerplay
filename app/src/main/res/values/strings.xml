@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">RadioAppFinal</string>
+    <string name="welcomeText">Welcome to the App of Radio PowerPlay</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="logIn">Log-in </string>
+    <string name="nowPlaying">Now playing... </string>
+    <string name="nextPlaying">Next playing... </string>
+    <string name="trackTitle">Track: </string>
+    <string name="trackArtist">Artist: </string>
+    <string name="trackAlbum">Album:</string>
+    <string name="trackYear">Year:</string>
+    <string name="trackRating">Chart Ranking:</string>
+    <string name="trackAssessment">Audience Ranking:</string>
+    <string name="activityTextMain">Log-in</string>
+    <string name="activityTextSongInfo">Song Information</string>
+    <string name="currentFrequencyText">Best receiving frequency</string>
+    <string name="b_goToSongRating">Rate Current Song</string>
+    <string name="b_goToModeratorRating">Rate Moderator</string>
+    <string name="b_goToSongRequest">Request a Song</string>
+    <string name="Warning">Information</string>
+    <string name="generalRating">How do you like the song in general?</string>
+    <string name="moodRating">How does the song represnt your current mood?</string>
+    <string name="tasteRating">How is it matching your music style?</string>
+    <string name="favoriteOccasion">In what situation you would want to hear this song?</string>
+    <string name="meetAgainWish">Would you wish to hear the somg again?</string>
+    <string name="submit">Submit</string>
+    <string name="sayNo">No</string>
+    <string name="sayMaybe">Maybe</string>
+    <string name="sayYes">Yes</string>
+    <string-array name="songSituation">
+        <item>Not at all</item>
+        <item>Relaxing</item>
+        <item>Sports</item>
+        <item>Party</item>
+        <item>Casually</item>
+    </string-array>
+    <string name="missingUserNameMessage">Please type in your user name before clicking submit</string>
+    <string name="missingPasswordMessage">Please type in your password before clicking submit</string>
+    <string name="authentificationWarning">Unknown User</string>
+    <string name="authentificationFailed">Please check your user name and your password and try again</string>
+    <string name="SongRatingSubmitted">Thank you for providing us your rating!</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RadioAppFinal</string>
+    <string name="welcomeText">Willkommen zur App von Radio PowerPlay</string>
+    <string name="userName">Benutzername</string>
+    <string name="password">Passwort</string>
+    <string name="logIn">Anmelden</string>
+    <string name="nowPlaying">Gerade spielt...</string>
+    <string name="nextPlaying">Als nächstes spielt...</string>
+    <string name="trackTitle">Song:</string>
+    <string name="trackArtist">Interpret:</string>
+    <string name="trackAlbum">Album:</string>
+    <string name="trackYear">Jahr:</string>
+    <string name="trackRating">Chartplatzierung:</string>
+    <string name="trackAssessment">Hörerplatzierung:</string>
+    <string name="activityTextMain">Anmelden</string>
+    <string name="activityTextSongInfo">Songinformation</string>
+    <string name="currentFrequencyText">Beste Sendefrequenz</string>
+    <string name="b_goToSongRating">Song bewerten</string>
+    <string name="b_goToModeratorRating">Moderator bewerten</string>
+    <string name="b_goToSongRequest">Song wünschen</string>
+    <string name="Warning">Achtung</string>
+    <string name="generalRating">Wie gut gefällt Dir der Song allgemein?</string>
+    <string name="moodRating">Wie gut passt ere zu Deiner augenblicklichen Stimmung?</string>
+    <string name="tasteRating">Wie gut entspricht er deinem Musikgeschmack?</string>
+    <string name="favoriteOccasion">Zu welcher Gelegenheit würdest Du ihn anhören?</string>
+    <string name="meetAgainWish">Würdest Du ihn gerne wieder hören?</string>
+    <string name="submit">Übermitteln</string>
+    <string name="sayNo">Nein</string>
+    <string name="sayMaybe">Vielleicht</string>
+    <string name="sayYes">Ja</string>
+    <string name="missingUserNameMessage">Bitte gib Deinen Benutzernamen ein</string>
+    <string name="missingPasswordMessage">Bitte gib Dein Passwort ein</string>
+    <string name="authentificationWarning">Unbekannter Benutzer</string>
+    <string name="authentificationFailed">Bitte überprüfe Deinen Benutzernamen und Dein Passwort und versuche es erneut</string>
+    <string name="SongRatingSubmitted">Danke, dass Du uns Deine Bewertung zukommen hast lassen!</string>
+</resources>
