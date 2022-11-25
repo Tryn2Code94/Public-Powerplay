@@ -40,16 +40,16 @@ public class Activity_SongInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song_info);
 
-        Integer totalTrackTime;
-        Integer actualTrackTime;
-        Integer progress;
+        Integer totalTrackTime = 0;
+        Integer actualTrackTime = 0;
+        Integer progress = 0;
         Integer counter = 0;
 
         Runnable periodicTitleRequestor = new Runnable(){
 
             @Override
             public void run() {
-                if(counter<10){
+                if(counter < 10){
                     currentTrack.setText("Sweet child of mine");
                     currentArtist.setText("Guns n Roses");
                     currentAlbum.setText("Apetite for distruction");
@@ -92,7 +92,7 @@ public class Activity_SongInfo extends AppCompatActivity {
             @Override
             public void run() {
                 Integer lastTotalTrackTime = 5000;
-                if(totalTrackTime=lastTotalTrackTime){
+                if(totalTrackTime==lastTotalTrackTime){
                     Integer progressCounter = 0;
                     if(totalTrackTime == 0){
                         progress = 0;
@@ -117,10 +117,14 @@ public class Activity_SongInfo extends AppCompatActivity {
 
                 ProgressBar progressBar = (ProgressBar) findViewById(R.id.currentTrackProgress);
                 progressBar.setProgress(progress);
-                currentTrackTotalTime.setText(totalTrackTime/(totalTrackTime-(totalTrackTime % 60))":"totalTrackTime % 60);
-                currentTrackCurrentTime.setText(actualTrackTime/(actualTrackTime-(actualTrackTime % 60))":"actualTrackTime % 60);
+                Integer totalTrackTimeSecond = totalTrackTime % 60;
+                Integer totalTrackTimeMinute = (totalTrackTime-totalTrackTimeSecond)/60;
+                Integer actualTrackTimeSecond = actualTrackTime % 60;
+                Integer actualTrackTimeMinute = (actualTrackTime-actualTrackTimeSecond)/60;
+                currentTrackTotalTime.setText(Integer.toString(totalTrackTimeMinute) + ":" + Integer.toString(totalTrackTimeSecond));
+                currentTrackCurrentTime.setText(Integer.toString(actualTrackTimeMinute) + ":" + Integer.toString(actualTrackTimeSecond));
             }
-        }
+        };
 
         trackHandler.postDelayed(periodicTitleRequestor, 5000);
         progressHandler.postDelayed(periodicProgressUpdator, 1000);
